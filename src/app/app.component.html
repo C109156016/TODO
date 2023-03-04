@@ -1,0 +1,24 @@
+<section class="todoapp">
+  <header class="header">
+    <h1>todos</h1>
+    <input class="new-todo" placeholder="What needs to be done?" autofocus>
+  </header>
+  <section class="main" style="display: block;">
+    <input id="toggle-all" class="toggle-all" type="checkbox" [checked]="toggleAllbtn" (click)="toggleAll()">
+    <label for="toggle-all">Mark all as complete</label>
+    <ul class="todo-list">
+      <li data-id="1677398708449" [class] = "{completed:check1 , smallText:check1}">
+        <div class="view"><input class="toggle" type="checkbox" [checked]="check1" (click)="click1()">
+          <label>111</label>
+          <button class="destroy"></button>
+        </div>
+      </li>
+      <li data-id="1677398710609" [class] = "{completed:check2 , smallText:check2}">
+        <div class="view"><input class="toggle" type="checkbox" [checked]="check2" (click)="click2()">
+          <label>222</label>
+          <button class="destroy"></button>
+        </div>
+      </li>
+    </ul>
+  </section>
+</section>
